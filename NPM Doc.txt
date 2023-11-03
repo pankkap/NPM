@@ -1,0 +1,39 @@
+What is an NPM?
+It is tool named as Node Package Manager which is use to install, uninstall and update third party Libraries.
+
+NPM is not only a tool, its an open source online repository which will help developer to extend their application functionality with available set of open source code in the repository uploaded by lots of developers. 
+
+
+You can install Packages in two ways
+1. Global Install -> npm install -g <package_name> : will available to all directories
+2. Local Install  -> npm install <package_name>: will available only to your project
+
+
+eg: 
+npm i chalk -> Project level Package
+npm i -g typescript -> Package available for all other projects
+
+
+Packagel.json -> It is used to contain project information and list of packages used in the project
+> npm init : You have answer certian information about your project manually.
+> npm init -y : to set project information with default values
+
+npm list
+npm view chalk versions
+1.1.1 -> Major.minor.patch
+Major: Big Changes, Not backward Compatible, may break old Code
+Minor: New Features, backward Compatible, may not break older builds
+Patch: Bug Fixes, backward Compatible, may not break older builds
+
+^4.4.1 -> Means there will be any update can be automatically done using command
+	> npm update
+For Major Release: We need to update manually
+	> npm install Package_name@latest
+
+To uninstall a Package 
+	> npm uninstall <Package_name>
+
+
+
+
+
